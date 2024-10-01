@@ -1,8 +1,10 @@
 // use bitcoincore_rpc::{Auth, Client, RpcApi};
 mod db;
+mod block;
 
 use tokio;
 use db::db::{connect_to_mongo, get_block};
+use block::{get_block_info_by_height, get_transaction_amount};
 
 #[tokio::main]
 async fn main() -> mongodb::error::Result<()> {

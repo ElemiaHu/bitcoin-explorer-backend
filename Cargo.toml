@@ -1,0 +1,13 @@
+[package]
+name = "bitcoin_rpc_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bitcoincore-rpc = "0.18.0"
+serde = "1.0.188"
+futures = "0.3.28"
+tokio = { version = "1.32.0", features = ["full"] }
+
+[dependencies.mongodb]
+version = "3.1.0"

@@ -8,6 +8,5 @@ bitcoincore-rpc = "0.18.0"
 serde = "1.0.188"
 futures = "0.3.28"
 tokio = { version = "1.32.0", features = ["full"] }
-
-[dependencies.mongodb]
-version = "3.1.0"
+tokio-postgres = "0.7"
+actix-web = "4"
